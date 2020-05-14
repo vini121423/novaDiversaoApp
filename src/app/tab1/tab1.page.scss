@@ -1,0 +1,55 @@
+.banner{
+    position:relative;
+    background:url("https://image.tmdb.org/t/p/w533_and_h300_bestv2/eV3XnUul4UfIivz3kxgeIozeo50.jpg") !important; 
+    background-image: linear-gradient(to right,black , #1d1616, 20%);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover; // ajusta img ao espaço //
+    height: 180px;
+    width: 100%;
+    padding: 15px;
+   
+   .info-banner{
+      position: absolute;
+      bottom:15px;
+       h2,p{
+         color: white;
+       }
+       h2{
+         font-size: 20px;
+         margin:0;
+         font-weight:normal;
+    }
+      p{
+        font-size:12px;
+        margin:0;
+        margin-bottom:15px;
+        
+   }
+   }
+     
+   }
+   
+   
+   ion-grid{
+      position: absolute;
+      top:180px;
+     
+      h1{
+      font-size:20px;
+      font-weight: bolder;
+      margin-bottom:5px;
+      color:#7e7a7a;
+     }
+     
+    
+   }
+
+
+
+   
+   
+   
+   
+   
+   
