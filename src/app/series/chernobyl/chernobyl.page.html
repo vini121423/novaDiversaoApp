@@ -1,9 +1,203 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>chernobyl</ion-title>
+  <ion-toolbar color="blue">
+    <ion-title>Filmes</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="dark" class="swiper-no-swiping">
 
+  <div class="filme">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" class="opacidade">
+          <img src="https://image.tmdb.org/t/p/w220_and_h330_face/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg" class="poster">
+        </ion-col>
+
+        <ion-col size="6" class="opacidade">
+          <div>
+            <h5 class="center"> Chernobyl (2019)</h5>
+          </div>
+          <div class="center">
+            <ion-button fill="outline" color="light" size="small">
+              <ion-icon name="play-outline"></ion-icon>
+              Assistir
+            </ion-button>
+
+            <ion-button fill="outline" color="light" size="small">
+              <ion-icon name="bookmark-outline"></ion-icon>
+              Adicionar
+            </ion-button>
+          </div>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </div>
+
+
+  <ion-segment (ionChange)="segmentChanged($event)" class="segmento" value="detalhes">
+    <ion-segment-button value="detalhes">
+
+      <ion-icon name="add-outline"></ion-icon>
+
+    </ion-segment-button>
+
+    <ion-segment-button value="sinopse">
+
+      <ion-icon name="document-text-outline"></ion-icon>
+
+    </ion-segment-button>
+    <ion-segment-button value="avaliar">
+
+      <ion-icon name="star-outline"></ion-icon>
+
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-slides>
+
+    <ion-slide>
+      <div class="informacoes-detalhes">
+        <h6 class="center">DETALHES</h6>
+        <div class="center">
+          <p> Estreou em 06/05/2019 </p>
+          <p>Craig Mazin <b>Creator</b></p>
+          <span class="tipofilme">TV-MA</span>
+          <p> Drama</p>
+
+          <span class="duracao">1h 10m</span>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="informacoes sinopse">
+        <h6> SINOPSE</h6>
+        <p>
+          Aqui é contada a história da explosão que aconteceu na Usina Nuclear de Chernobyl. Em 1986, na Ucrânia, o
+          acidente dizimou dezenas de pessoas e acabou por se tornar o maior desastre nuclear da história. Enquanto o
+          mundo lamentava o ocorrido, o cientista Valery Legasov (Jared Harris), a física Ulana Khomyuk (Emily Watson) e
+          o vice-presidente do Conselho de Ministros Boris Shcherbina (Stellan Skarsgård) tentam descobrir as causas do
+          acidente.
+        </p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="informacoes">
+        <h6> AVALIAÇÕES </h6>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12">
+              <div style="display: inline;">
+                <div class="c100 p85 small green">
+                  <span>85%</span>
+                  <div class="slice">
+                    <div class="bar">
+                    </div>
+                    <div class="fill">
+                    </div>
+                  </div>
+                </div>
+
+
+                <p> <b>Avaliação dos usuários</b> </p>
+              </div>
+            </ion-col>
+
+
+
+            <ion-col size="12">
+              <div style="display: inline;">
+                <ion-button class="botoes" size="small">
+                  <ion-icon name="list-outline"></ion-icon>
+                </ion-button>
+                <ion-button class="botoes" size="small">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </ion-button>
+                <ion-button class="botoes" size="small">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </ion-button>
+                <ion-button class="botoes" size="small">
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-button>
+              </div>
+
+            </ion-col>
+
+            <ion-col size="12">
+              <div style="display:inline;">
+                <ion-icon name="star" class="icone"> </ion-icon>
+                <ion-icon name="star" class="icone"> </ion-icon>
+                <ion-icon name="star" class="icone"> </ion-icon>
+                <ion-icon name="star" class="icone"> </ion-icon>
+                <ion-icon name="star" class="icone"> </ion-icon>
+              </div>
+            </ion-col>
+            <ion-col size="12">
+              <ion-button color="success" fill="outline" size="small" class="center">
+                Fazer Login
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <hr style="color:white">
+
+  <h5 class="titulo">Temporadas</h5>
+  <div class="accordions">
+    <div class="accordion-item">
+      <input type="radio" name="accordion" checked="checked" id="accordion-1" />
+      <label for="accordion-1">Temporada 1 (2019)</label>
+      <div class="accordion-content">5 Episódios
+        <ion-button fill="outline" color="light" size="small">
+          <ion-icon name="eye-outline"></ion-icon>
+          &nbsp;Ver
+        </ion-button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div>
+    <h5 class="titulo"> Elenco </h5>
+    <ion-chip class="elenco">
+      <ion-avatar>
+        <img src="https://image.tmdb.org/t/p/w138_and_h175_face/mGODbYpkR1NKBOV3rtTfZ7EWoIl.jpg">
+      </ion-avatar>
+      <ion-label>Jared Harris</ion-label>
+      <p>&nbsp;| Valery Legasov</p>
+    </ion-chip>
+
+    <ion-chip class="elenco">
+      <ion-avatar>
+        <img src="https://image.tmdb.org/t/p/w138_and_h175_face/wCpWjalD8d4MNuAdYupYf3viT1I.jpg">
+      </ion-avatar>
+      <ion-label>Stellan Skarsgård</ion-label>
+      <p>&nbsp;| Boris Shcherbina</p>
+    </ion-chip>
+
+    <ion-chip class="elenco">
+      <ion-avatar>
+        <img src="https://image.tmdb.org/t/p/w138_and_h175_face/oJerQ7xq5uLTsxjqGWzsbYCjobh.jpg">
+      </ion-avatar>
+      <ion-label>Emily Watson</ion-label>
+      <p>&nbsp;| Ulana Khomyuk</p>
+    </ion-chip>
+
+    <ion-button color="light" size="small" class="botao">
+      Ver mais
+    </ion-button>
+  </div>
+
+  <div>
+    <h5 class="titulo" id="trailer"> Trailer </h5>
+    <iframe width="280" height="157" src="https://www.youtube.com/embed/s9APLXM9Ei8" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="trailer"></iframe>
+  </div>
+  
 </ion-content>

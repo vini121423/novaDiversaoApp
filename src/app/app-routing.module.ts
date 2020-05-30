@@ -23,12 +23,12 @@ const routes: Routes = [
     loadChildren: () => import('./series/la-casa-de-papel/la-casa-de-papel.module').then( m => m.LaCasaDePapelPageModule)
   },
   {
-    path: 'dbz-kai',
-    loadChildren: () => import('./desenhos/dbz-kai/dbz-kai.module').then( m => m.DbzKaiPageModule)
+    path: 'scooby',
+    loadChildren: () => import('./desenhos/scooby/scooby.module').then( m => m.ScoobyPageModule)
   },
   {
-    path: 'family-guy',
-    loadChildren: () => import('./desenhos/family-guy/family-guy.module').then( m => m.FamilyGuyPageModule)
+    path: 'simpsons',
+    loadChildren: () => import('./desenhos/simpsons/simpsons.module').then( m => m.SimpsonsPageModule)
   }
 ];
 @NgModule({

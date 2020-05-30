@@ -2,11 +2,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonSlides } from '@ionic/angular';
 
 @Component({
-  selector: 'app-chernobyl',
-  templateUrl: './chernobyl.page.html',
-  styleUrls: ['./chernobyl.page.scss'],
+  selector: 'app-simpsons',
+  templateUrl: './simpsons.page.html',
+  styleUrls: ['./simpsons.page.scss'],
 })
-export class ChernobylPage implements OnInit {
+export class SimpsonsPage implements OnInit {
   @ViewChild(IonSlides, { static: true }) slides: IonSlides;
   
   constructor() { }
@@ -30,4 +30,5 @@ export class ChernobylPage implements OnInit {
 
     }
   }
+
 }

@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FamilyGuyPageRoutingModule } from './family-guy-routing.module';
+import { ScoobyPageRoutingModule } from './scooby-routing.module';
 
-import { FamilyGuyPage } from './family-guy.page';
+import { ScoobyPage } from './scooby.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FamilyGuyPageRoutingModule
+    ScoobyPageRoutingModule
   ],
-  declarations: [FamilyGuyPage]
+  declarations: [ScoobyPage]
 })
-export class FamilyGuyPageModule {}
+export class ScoobyPageModule {}

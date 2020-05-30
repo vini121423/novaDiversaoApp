@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DbzKaiPageRoutingModule } from './dbz-kai-routing.module';
+import { SimpsonsPageRoutingModule } from './simpsons-routing.module';
 
-import { DbzKaiPage } from './dbz-kai.page';
+import { SimpsonsPage } from './simpsons.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DbzKaiPageRoutingModule
+    SimpsonsPageRoutingModule
   ],
-  declarations: [DbzKaiPage]
+  declarations: [SimpsonsPage]
 })
-export class DbzKaiPageModule {}
+export class SimpsonsPageModule {}
