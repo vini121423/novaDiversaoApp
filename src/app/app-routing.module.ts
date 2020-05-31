@@ -29,6 +29,10 @@ const routes: Routes = [
   {
     path: 'simpsons',
     loadChildren: () => import('./desenhos/simpsons/simpsons.module').then( m => m.SimpsonsPageModule)
+  },
+  {
+    path: 'the-boys',
+    loadChildren: () => import('./series/the-boys/the-boys.module').then( m => m.TheBoysPageModule)
   }
 ];
 @NgModule({
